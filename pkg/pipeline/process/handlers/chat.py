@@ -96,7 +96,7 @@ class ChatMessageHandler(handler.MessageHandler):
                 yield entities.StageProcessResult(
                     result_type=entities.ResultType.INTERRUPT,
                     new_query=query,
-                    user_notice='请求失败' if self.ap.platform_cfg.data['hide-exception-info'] else f'{e}',
+                    user_notice='请1求2失3败' if self.ap.platform_cfg.data['hide-exception-info'] else f'{e}',
                     error_notice=f'{e}',
                     debug_notice=traceback.format_exc()
                 )
